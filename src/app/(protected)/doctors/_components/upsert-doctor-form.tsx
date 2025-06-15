@@ -97,6 +97,7 @@ const UpsertDoctorForm = ({ doctor, onSuccess }: UpsertDoctorFormProps) => {
       toast.error("Erro ao adicionar médico.");
     },
   });
+
   const onSubmit = (values: FormSchema) => {
     upsertDoctorAction.execute({
       ...values,
